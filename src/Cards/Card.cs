@@ -31,7 +31,7 @@ namespace lilium.src.Cards
             _fingerPrint = GenerateFingerprint(_number);
             _funding = SetFunding(fundingOption);
             _nip = 9999;
-            _lastDigits = LastDigits(_number, 4);
+            _lastDigits = Last4Digits(_number, 4);
         }
         #endregion
 
@@ -137,11 +137,82 @@ namespace lilium.src.Cards
             }
             return fundingSet;
         }
-        private string LastDigits(string source, int tail_lenght)
+        private string Last4Digits(string source, int tail_lenght)
         {
             if(tail_lenght >= source.Length)
                 return source;
             return source.Substring(source.Length-tail_lenght);
+        }
+        #endregion
+
+        #region propiertes
+        public  string Number
+        {
+            get => _number;
+            set => _number = value;
+        }
+        public int Nip
+        {
+            get => _nip;
+            set => _nip = value;
+        }
+        public string NameClient
+        {
+            get => _nameClient;
+            set => _nameClient = value;
+        }
+        public string LastnameClient 
+        {
+            get => _lastnameClient;
+            set => _lastnameClient = value;
+        }
+        public string Brand 
+        {
+            get => _brand;
+        }
+        public void SetBrand(int brandOption)
+        {
+            _brand = BrandCard(brandOption);
+        }
+        public string Country
+        {
+            get => _country;
+            set => _country = value;
+        }
+        public int ExpiresMonth
+        {
+            get => _expiresMonth;
+            set => _expiresMonth = value;
+        }
+        public int ExpiresYear
+        {
+            get => _expiresYear;
+            set => _expiresYear = value;
+        }
+        public string Funding
+        {
+            get => _funding;
+        }
+        public void SetFunging(int fundingOption)
+        {
+            _funding = SetFunding(fundingOption);
+        }
+        public string LastDigits
+        {
+            get => _lastDigits;
+        }
+        public void SetLastDigits(string number)
+        {
+            _lastDigits = Last4Digits(number, 4);
+        }
+        public string FingerPrint
+        {
+            get => _fingerPrint;
+        }
+        public void SetFingerPrint(string cardNumber)
+        {
+            var sha256Hash = SHA256.Create();
+            _fingerPrint = GetHash(sha256Hash, cardNumber);
         }
         #endregion
         
