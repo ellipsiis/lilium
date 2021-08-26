@@ -1,4 +1,4 @@
-documentation/*.aux
-documentation/*.fdb_latexmk
-documentation/*.log
-documentation/*.synctex.gz
+*.aux
+*.fdb_latexmk
+*.log
+*.synctex.gz
