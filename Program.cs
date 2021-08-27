@@ -1,12 +1,27 @@
-﻿using System;
-
-namespace lilium
+using System;
+using lilium.src.Cards;
+using lilium.src.interfaces;
+namespace lilium 
 {
-    class Program
-    {
-        static void Main(string[] args)
+    public class Program : ControlATM
+    {   
+        #region main
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
+        #endregion
+
+        #region methods
+        void ControlATM.LoginUser()
+        {
+            //some
+        }
+        bool ControlATM.CheckCard(string nameClient, string lastnameClient, string cardNumber)
+        {
+            
+            //some
+        }
+        #endregion
     }
 }
