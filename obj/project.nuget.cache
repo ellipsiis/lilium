@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "SMNOjrVtnjoRw1bHT3zAbLguV9oZdFN+0fI9nZulYBHLajp1+Ty54CO2N9hAa9KTJo38Emvl/dZ3Z+hGNLflIQ==",
+  "dgSpecHash": "hA2ShexNXXk6EMhpZNwNyN1RSxXEHQjaJZzTa7trZLul78RKvFPLrEIvU/r33uLRj5bBOnjV3oVpwzhrSJxqKw==",
   "success": true,
   "projectFilePath": "/home/ellipsiis/Desktop/lilium/lilium.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/ellipsiis/.nuget/packages/nstack.core/0.16.0/nstack.core.0.16.0.nupkg.sha512",
+    "/home/ellipsiis/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512",
+    "/home/ellipsiis/.nuget/packages/terminal.gui/1.2.1/terminal.gui.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
