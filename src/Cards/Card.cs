@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 using System.Text;
 namespace lilium.src.Cards
 {
-    public class Card
+    internal class Card
     {
         const int YEAR_ACTUAL = 2021;
         #region field of class

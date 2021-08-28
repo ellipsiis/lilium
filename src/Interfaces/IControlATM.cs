@@ -1,6 +1,6 @@
 namespace lilium.src.Interfaces
 {
-    interface IControlATM
+    internal interface IControlATM
     {
         void MainUserInterface();
     }
