@@ -1,4 +1,51 @@
+#Files built in Visual Studio or dontnet
 *.aux
 *.fdb_latexmk
 *.log
 *.synctex.gz
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+# Build Results
+[Dd]ebug/
+[Dd]debuPublic/
+[Rr]elease/
+[Rr]eleases/
+[Bb]in/
+[Oo]bj
+[Ll]og/
+[Ll]ogs/
+[Oo]bj/[Dd]ebug/
+#Visual Studio caches
+.vs/
+# Visual Studio 2017 auto generated files
+Generated\ Files/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
